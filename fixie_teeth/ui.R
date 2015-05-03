@@ -9,7 +9,7 @@ shinyUI(fluidPage(
   
   sidebarLayout(
     sidebarPanel(
-      style="min-width:235px;max-width:405px", 
+      style="min-width:100px;max-width:250px", 
       tags$head(
         tags$style(HTML("
                         @import url('//fonts.googleapis.com/css?family=Lobster');
@@ -23,8 +23,7 @@ shinyUI(fluidPage(
                         
                         "))
         ),
-      p("Filling out all fields will enable the",
-        strong("Calculate"), "button:"),
+      p("Please fill out all fields"),
       numericInput(inputId = "ratio",
                    label = "Desired gear ratio",
                    value = 2.8,
