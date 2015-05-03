@@ -2,19 +2,18 @@
 velo\_apps
 ==========
 
-`velo_apps` provides functions of the [velo](https://github.com/jannes-m/velo)-package as RShiny Apps. This way people unfamiliar with R can now also use `velo`-functions. `spoke_app` calculates spoke lengths.
+`velo_apps` provides functions of the [velo](https://github.com/jannes-m/velo)-package as RShiny Apps. This way people unfamiliar with R can now easily use `velo`-functions.
 
-You can install the latest development version from github with
+-   `spoke_app` calculates spoke lengths.
+-   `fixie_teeth` calculates for a given gear ratio the optimal combination of cog ring teeth and chainring teeth in terms of skid patches.
+
+To run `velo`-apps locally, use function `runGithub`. Taking spoke\_app as an example, you can run:
 
 ``` r
-if (packageVersion("devtools") < 1.6) {
-    install.packages("devtools")    
-    }
-if (!"lazyeval" %in% installed.packages()[, "Package"]) {
-devtools::install_github("hadley/lazyeval")  
-}
-devtools::install_github("jannes-m/velo")
+shiny::runGitHub("velo_apps", "jannes-m", subdir = "spoke_app")
 ```
+
+Another possibility is to clone the velo\_apps-repository to your local computer. Use `shiny::runApp("spoke_app")` to run the app.
 
 Still to do
 ===========
