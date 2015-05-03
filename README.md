@@ -22,3 +22,9 @@ Still to do
 1.  `spoke_app`: (visual) description of the measures to take (e.g., ERD, hub to left flange, etc.)
 2.  write `fixie_app` for Olli
 3.  write `trail_app` together with Dirk
+
+4.  Item 1
+5.  Item 2
+6.  Item 3
+    -   Item 3a
+    -   Item 3b
