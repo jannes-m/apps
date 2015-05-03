@@ -2,11 +2,7 @@
 velo\_apps
 ==========
 
-`velo_apps` provides functions of the [velo](https://github.com/jannes-m/velo)-package as RShiny Apps. velo is an R package which provides bicycle-related calculations frequently used by bike enthusiasts. Until now many of these functions are spread over the web, are unreliable mostly due to insufficient documentation and/or do not exist. The main goals of the velo-package are:
-
--   Bring together the most important bicycle-related calculations in a well-documented, transparent and reproducible manner (well, so far, the package consists of four functions ...).
-
--   In the future, RShiny should make the implemented functions interactively usable.
+`velo_apps` provides functions of the [velo](https://github.com/jannes-m/velo)-package as RShiny Apps. This way people unfamiliar with R can now also use `velo`-functions. `spoke_app` calculates spoke lengths.
 
 You can install the latest development version from github with
 
@@ -19,3 +15,10 @@ devtools::install_github("hadley/lazyeval")
 }
 devtools::install_github("jannes-m/velo")
 ```
+
+Still to do
+===========
+
+1.  `spoke_app`: (visual) description of the measures to take (e.g., ERD, hub to left flange, etc.)
+2.  write `fixie_app` for Olli
+3.  write `trail_app` together with Dirk
