@@ -13,7 +13,8 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 ```
-# velo
+# velo_apps
+`velo_apps` provides functions of the [velo](https://github.com/jannes-m/velo)-package as RShiny Apps.
 velo is an R package which provides bicycle-related calculations frequently used by bike enthusiasts. Until now many of these functions are spread over the web, are unreliable mostly due to insufficient documentation and/or do not exist.
 The main goals of the velo-package are:
 
