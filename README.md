@@ -10,7 +10,7 @@ velo\_apps
 To run `velo`-apps locally, use function `runGithub`. Taking spoke\_app as an example, you can run:
 
 ``` r
-shiny::runGitHub("velo_apps", "jannes-m", subdir = "spoke_app")
+shiny::runGitHub("velo_apps", "jannes-m", subdir = "spoke_length")
 ```
 
 Another possibility is to clone the velo\_apps-repository to your local computer. Use `shiny::runApp("spoke_app")` to run the app.
@@ -18,6 +18,6 @@ Another possibility is to clone the velo\_apps-repository to your local computer
 Still to do
 ===========
 
-1.  `spoke_app`: (visual) description of the measures to take (e.g., ERD, hub to left flange, etc.)
+1.  `spoke_length`: (visual) description of the measures to take (e.g., ERD, hub to left flange, etc.)
 2.  write `fixie_app` for Olli
 3.  write `trail_app` together with Dirk
