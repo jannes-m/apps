@@ -1,0 +1,18 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+# spoke_app
+
+This App lets you calculate the spoke lengths for your wheel. Before using the App, you should measure all necessary parameters such as the effective rim diameter, the flange diameters and the width from the center hub to the flanges.
