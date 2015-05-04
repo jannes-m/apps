@@ -29,7 +29,7 @@ shinyUI(fluidPage(
                    value = 2.8,
                    step = 0.1),
       
-      a(id = "toggleAdvanced", "Show/hide advanced info", href = "#"),
+      a(id = "toggleAdvanced", "Show/hide more input parameters", href = "#"),
       shinyjs::hidden(
         div(id = "advanced",
             sliderInput(inputId = "front",

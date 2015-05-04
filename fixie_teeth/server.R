@@ -12,7 +12,7 @@ shinyServer(
         res[, 1] <- 1:input$nrow
         names(res) <- c("Rank", "Teeth chainring", "Teeth cogring", 
                         "Gear ratio",
-                        "Skid patches single", "Skid patches ambi")
+                        "Skid patches single-legged", "Skid patches ambidextrous")
         res
       } else {
         isolate({          
@@ -25,7 +25,7 @@ shinyServer(
           res <- data.frame(1:nrow(res), res)
           names(res) <- c("Rank", "Teeth chainring", "Teeth cogring",
                           "Gear ratio",
-                          "Skid patches single", "Skid patches ambi")    
+                          "Skid patches single-legged", "Skid patches ambidextrous")    
           # print the first row in boldface
           res[1, ] <- sapply(res[1, ], function(x) {
             x <- as.character(h4(strong(x),
@@ -38,7 +38,7 @@ shinyServer(
         })
       }
     }, include.rownames = FALSE, align = rep("c", 7),
-    caption = paste0("Optimal teeth combination for a given gear ratio sorted",  
+    caption = paste0("Optimal teeth combination for a given gear ratio sorted ",  
                      "decreasingly first by the number of skid patches and ", 
                      "secondly by the gear ratio."),
     caption.placement = getOption("xtable.caption.placement", "top"), 
