@@ -1,0 +1,11 @@
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+
+* fixie_teeth
+Fixie builders frequently face the problem to choose a gear ratio (i.e. the number of chainring teeth divided by the number of cogring teeth) that provides them with as many skid patches as possible.
+For instance, choosing 40 teeth for the chaingring and 20 teeth for the cogring, is one of the worst possible combinations since it gives you only a single skid patch. Consequently, your tire will soon be worn off at this specific point. It is much better to choose the combination of teeth in such a way that you have as many skid patches as possible.
+This App does exactly that. It calculates the optimal combination of chainring and cogring teeth for a given gear ratio within a specified gear ratio tolerance range (default: desired gear ratio +/- 0.1). The result is a table with the number of chain- and cogring teeth sorted descendingly first by the number of skid patches and secondly by the desired gear ratio.
+
