@@ -22,6 +22,16 @@ knitr::opts_chunk$set(
 
 To run `velo`-apps locally, use function `runGithub`. Taking spoke_app as an example, you can run:
 ```{r, eval = FALSE}
+if (packageVersion("devtools") < 1.6) {
+    install.packages("devtools")    
+    }
+if (!"lazyeval" %in% installed.packages()[, "Package"]) {
+devtools::install_github("hadley/lazyeval")  
+}
+
+# install velo-package
+devtools::install_github("jannes-m/velo")
+# run App
 shiny::runGitHub("velo_apps", "jannes-m", subdir = "spoke_length")
 ```
 
