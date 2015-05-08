@@ -7,6 +7,12 @@ shinyUI(fluidPage(
   tabsetPanel(
     tabPanel("Calculator",
              titlePanel(h3("Spoke Calculator")),
+             fluidRow(
+               column(12,
+                      includeMarkdown("description.md")
+               )
+             ),
+             br(),
              sidebarLayout(
                sidebarPanel(
                  style="min-width:235px;max-width:405px", 

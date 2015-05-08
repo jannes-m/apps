@@ -6,10 +6,16 @@ shinyUI(fluidPage(
   useShinyjs(),
   # Application title
   titlePanel(h3("Optimal teeth combination for a fixie bike")),
-  
+  fluidRow(
+    column(12,
+           includeMarkdown("description.md")
+    )
+  ),
+  br(),
+  br(),
   sidebarLayout(
     sidebarPanel(
-      style="min-width:100px;max-width:250px", 
+      style="min-width:200px;max-width:450px", 
       tags$head(
         tags$style(HTML("
                         @import url('//fonts.googleapis.com/css?family=Lobster');
@@ -24,14 +30,17 @@ shinyUI(fluidPage(
                         "))
         ),
       p("Please fill out all fields"),
-      numericInput(inputId = "ratio",
+      div(numericInput(inputId = "ratio",
                    label = "Desired gear ratio",
                    value = 2.8,
                    step = 0.1),
+          style = "max-width:210px"),
+      
       
       a(id = "toggleAdvanced", "Show/hide more input parameters", href = "#"),
       shinyjs::hidden(
         div(id = "advanced",
+            div(
             sliderInput(inputId = "front",
                         label = "Range of chainring teeth",
                         min = 25,
@@ -44,6 +53,8 @@ shinyUI(fluidPage(
                         min = 10,
                         max = 30, 
                         value = c(14, 21)),
+            style = "min-width:230px;max-width:250px"),
+            splitLayout(
             numericInput(inputId = "tol",
                          label = "Tolerance",
                          value = 0.1,
@@ -51,24 +62,21 @@ shinyUI(fluidPage(
             numericInput("nrow", 
                          label = "Number of rows to return",
                          value = 6)           
+            )
         )
       ),
       br(),
       br(),
       actionButton("button", "Calculate", icon("table"), 
                    class = "btn btn-primary btn-md"), 
-      width = 4),
+      width = 6),
     
     mainPanel(
-      br(),
-      br(),
-      br(),
       tableOutput("tab"),
-      width = 8)
+      width = 6)
     )
   )
-  )
-
+)
 
 
 

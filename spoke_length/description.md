@@ -1,0 +1,1 @@
+This App lets you calculate the spoke lengths for your wheel. Before using the App, you should measure all necessary parameters such as the effective rim diameter, the flange diameters and the width from the center hub to the flanges. If you are unsure which measures to take, please refer to the tab `What to measure`.
