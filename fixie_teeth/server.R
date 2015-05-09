@@ -39,8 +39,7 @@ shinyServer(
       }
     }, include.rownames = FALSE, align = rep("c", 7),
     caption = paste0("Optimal teeth combination for a given gear ratio sorted ",  
-                     "decreasingly first by the number of skid patches and ", 
-                     "secondly by the gear ratio."),
+                     "decreasingly by the number of skid patches."),
     caption.placement = getOption("xtable.caption.placement", "top"), 
     caption.width = getOption("xtable.caption.width", NULL),
     # sanitize.text.function translates my strong-command into bold-face
