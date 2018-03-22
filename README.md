@@ -25,7 +25,7 @@ shiny::runGitHub("velo_apps", "jannes-m", subdir = "spoke_length")
 
 You can also clone the velo\_apps-repository to your local computer, then use `shiny::runApp("spoke_length")` to run the app.
 
-Finally, the apps are also available on the RStudio server:
+Finally, the apps are also available on the RStudio Shiny Server:
 
 -   App to calculate spoke lengths: <https://jannes-m.shinyapps.io/spoke_app/>
 -   App to calculate the optimal teeth combination for a fixie bike: <https://jannes-m.shinyapps.io/fixie_teeth/>
