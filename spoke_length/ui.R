@@ -96,8 +96,8 @@ shinyUI(fluidPage(
                  br(),
                  br(),
                  br(),
-                tableOutput("tab"),
-                 width = 6),
+                 tableOutput("tab"),
+                 width = 6)
                )
              ),
     tabPanel("What to measure", 
@@ -114,7 +114,12 @@ shinyUI(fluidPage(
                       br(),
                       img(src = "nabetop.png", height = 150, width = 200)
                       )
-               )
+               ),
+             br(),
+             br(),
+             "Figures kindly provided by",
+             a(href = "https://www.speichenrechner.de/ausgabe.php?Nippelsitz=544&loecher=32&dmloch=2.4&SRNippel=12&Lochkreis=45&Lochkreisr=45&SRasym=0&SRasymr=0&Abstand=38&Abstandr=19.4&Kreuz=3&Kreuzr=3&vrhr=0",
+                        "Speichenrechner.de")
              )
     )
   )
