@@ -37,7 +37,8 @@ shinyServer(
           res
         })
       }
-    }, include.rownames = FALSE, align = rep("c", 7),
+    }, include.rownames = FALSE, 
+    align = "c",  # rep("c", 7) returned an error, don't know why
     caption = paste0("Optimal teeth combination for a given gear ratio sorted ",  
                      "decreasingly by the number of skid patches."),
     caption.placement = getOption("xtable.caption.placement", "top"), 

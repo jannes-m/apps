@@ -1,9 +1,5 @@
 # load shinyjs (needed for 'useShinyjs()')
-alignCenter <- function(el) {
-  htmltools::tagAppendAttributes(el,
-                                 style="margin-left:auto;margin-right:auto;"
-  )
-}
+library("shinyjs")
 
 shinyUI(fluidPage(
   useShinyjs(),
@@ -44,13 +40,12 @@ shinyUI(fluidPage(
       
       p("Please fill out all fields"),
       div(
-        alignCenter(numericInput(inputId = "ratio",
-                   label = "Desired gear ratio",
-                   value = 2.8,
-                   step = 0.1)),
-                  style = "max-width:210px"),
-      
-      
+        numericInput(inputId = "ratio",
+                     label = "Desired gear ratio",
+                     value = 2.8,
+                     step = 0.1),
+        style = "max-width:210px"),
+            
       a(id = "toggleAdvanced", "Show/hide more input parameters", href = "#"),
       shinyjs::hidden(
         div(id = "advanced",

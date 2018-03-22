@@ -66,7 +66,8 @@ shinyServer(
          res
          })
        }
-      }, include.rownames = FALSE, align = rep("c", 4),
+      }, include.rownames = FALSE, 
+      align = "c",  # rep("c", 4) returned an error, don't know why
       caption = "Spoke lengths for the indicated input parameters.",
       caption.placement = getOption("xtable.caption.placement", "top"), 
       caption.width = getOption("xtable.caption.width", NULL),
