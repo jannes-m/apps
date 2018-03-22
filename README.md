@@ -33,6 +33,4 @@ Finally, the apps are also available on the RStudio Shiny Server:
 Still to do
 ===========
 
-1.  `spoke_length`: (visual) description of the measures to take (e.g., ERD, hub to left flange, etc.)
-2.  write `fixie_teeth` for Olli
-3.  write `trail` together with Dirk
+1.  `spoke_length`: add source to the (visual) descriptions of the measures to take (e.g., ERD, hub to left flange, etc.) or create your own figures
